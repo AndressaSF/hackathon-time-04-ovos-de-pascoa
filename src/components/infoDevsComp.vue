@@ -1,43 +1,43 @@
 <template>
-    <div class="paginaDevs">
+    <v-container class="paginaDevs">
     <h2 class="tituloPagina">Desenvolvedores do Projeto</h2>
     <h3>Conheça um pouco sobre os nossos desenvolvedores.</h3>
     <div class="nomeDev">
         <ul>
-        <ol>
+        <ol id="andressa">
             Andressa Freitas
             <ol><a href="https://github.com/AndressaSF">Perfil do GitHub</a></ol>
             <ol><a href="">Perfil do Linkedin</a></ol>
         </ol>
-        <ol>
+        <ol id="fernando">
             Fernando Tasca
             <ol><a href="https://github.com/FernandoTasca">Perfil do GitHub</a></ol>
             <ol><a href="">Perfil do Linkedin</a></ol>
         </ol>
-        <ol>
+        <ol id="luiz">
             Luiz Henrique
             <ol><a href="https://github.com/luizhss">Perfil do GitHub</a></ol>
             <ol><a href="">Perfil do Linkedin</a></ol>
         </ol>
-        <ol>
+        <ol id="tamara">
             Tamara Luz
             <ol><a href="https://github.com/tamarabluz">Perfil do GitHub</a></ol>
             <ol><a href="">Perfil do Linkedin</a></ol>
         </ol>
-        <ol>
+        <ol id="wilseny">
             Wilseny Teixeira
             <ol><a href="https://github.com/WilsenyTeixeira">Perfil do GitHub</a></ol>
             <ol><a href="">Perfil do Linkedin</a></ol>
         </ol>
     </ul>
     </div>
-    </div>
+    </v-container>
         
 </template>
 
 <script>
 export default {
-    name: 'infoDevs'
+    name: 'infoDevs',
 }
 </script>
 
