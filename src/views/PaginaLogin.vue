@@ -51,7 +51,7 @@ export default {
     },
     delay(){
         setTimeout(()=>{
-          this.$router.push('/cadastrousuario')
+          this.$router.push('/cadastro-clientes')
           },100)
 
     }
