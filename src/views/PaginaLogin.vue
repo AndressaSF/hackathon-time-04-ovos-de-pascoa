@@ -9,7 +9,7 @@
         <v-text-field  label="E-mail" required> </v-text-field>
 
         <v-text-field
-          type="Senha"
+          type="password"
           label="Senha"
           required
         >
