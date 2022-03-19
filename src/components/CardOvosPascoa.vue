@@ -5,7 +5,7 @@
       height="200px"
       :src="imagem"
     >
-      <v-card-title>{{ nome }}</v-card-title>
+      <v-card-title class="titulo">{{ nome }}</v-card-title>
     </v-img>
 
     <v-card-subtitle class="subtitle-1 pb-0">
@@ -50,5 +50,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  .titulo{
+    background-color: rgba(0, 0, 0, 0.0004),
+  }
 </style>
