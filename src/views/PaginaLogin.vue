@@ -19,7 +19,8 @@
       <div class="botoes">
         <v-btn
           @click="nologin"
-          color="purple darken-4"
+          class="mx-2"
+          color="primary"
           elevation="2"
           medium
           outlined
@@ -27,11 +28,16 @@
           >Login</v-btn
         >
         
-          <v-btn  @click="delay"  color="purple darken-4" elevation="2" medium outlined rounded
+          <v-btn 
+            @click="delay"
+            class="mx-2"
+            color="primary"
+            elevation="2"
+            medium
+            outlined
+            rounded
             > Cadastrar</v-btn
-          >
-          
- 
+          > 
       </div>
     </div>
   </v-app>
@@ -51,7 +57,7 @@ export default {
     },
     delay(){
         setTimeout(()=>{
-          this.$router.push('/cadastrousuario')
+          this.$router.push('/cadastro-clientes')
           },100)
 
     }

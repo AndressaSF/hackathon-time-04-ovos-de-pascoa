@@ -26,7 +26,7 @@
             <router-link to="/loja">
                 <v-btn
                     class="mx-2"
-                    color="purple"
+                    color="primary"
                     elevation="2"
                     medium
                     outlined
@@ -39,7 +39,7 @@
 
             <v-btn
                 class="mx-2"
-                color="purple"
+                color="primary"
                 elevation="2"
                 medium
                 outlined

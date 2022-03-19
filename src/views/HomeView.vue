@@ -17,7 +17,7 @@
     <v-card-actions>
       <router-link to="/loja">
         <v-btn
-          color="purple darken-4"
+          color="primary"
           text
         >
           Compre Aqui
@@ -50,16 +50,16 @@
     <v-card-actions>
       <router-link to="/cadastro-clientes">
         <v-btn
-          color="purple darken-4"
+          color="primary"
           text
         >
           Cliente
         </v-btn>
       </router-link>
       <v-spacer></v-spacer>
-<router-link to="/cadastro-vendedores">
+      <router-link to="/cadastro-vendedores">
         <v-btn
-          color="purple darken-4"
+          color="primary"
           text
         >
           Vendedor
