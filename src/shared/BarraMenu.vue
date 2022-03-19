@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>NomeAPP</v-toolbar-title>
+      <v-toolbar-title>Páscoathon</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
@@ -17,7 +17,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>PaginaInicial</v-list-item-title>
+              <v-list-item-title>Pagina Inicial</v-list-item-title>
             </v-list-item>
           </router-link>
 
@@ -62,7 +62,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-information-outline</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Informações sobre os desenvolvedores</v-list-item-title>
+              <v-list-item-title>Informações </v-list-item-title>
             </v-list-item>
           </router-link>
 

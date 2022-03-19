@@ -30,7 +30,8 @@
           <v-btn  @click="delay"  color="purple darken-4" elevation="2" medium outlined rounded
             > Cadastrar</v-btn
           >
-        
+          
+ 
       </div>
     </div>
   </v-app>
