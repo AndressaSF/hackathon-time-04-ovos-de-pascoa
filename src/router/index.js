@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
 import PaginaLogin from"../views/PaginaLogin.vue"
 import LojaView from '../views/LojaView.vue'
 import CadastroVendedorView from '../views/CadastroVendedorView.vue'
@@ -21,11 +20,6 @@ const routes = [
     path: '/login',
     name: 'PaginaLogin',
     component: PaginaLogin
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: AboutView
   },
   {
     path: '/cadastro-vendedores',
