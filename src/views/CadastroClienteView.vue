@@ -1,6 +1,11 @@
 <template>
 <div style="width: 80%" class="registro">
     <h2>Cadastro de Cliente</h2>
+    <router-link to="cadastro-vendedores">
+        <v-btn color="purple" text >
+            É vendedor?
+        </v-btn>
+    </router-link>
     <v-form class="registro-box" ref="form" v-model="valid" lazy-validation>
         <v-text-field v-model="nome" label="Nome Completo" required>
         </v-text-field>
@@ -10,25 +15,27 @@
         </v-text-field>
         <v-text-field v-model="endereco" label="Endereço" required>
         </v-text-field>
-        <v-text-field v-model="number" label="CPF" required>
+        <v-text-field v-model="cpf" label="CPF" required>
         </v-text-field>
-
-        <v-text-field v-model="password" type="password" label="Senha" required>
+        <v-text-field v-model="senha" type="password" label="Senha" required>
         </v-text-field>
 
     </v-form>
         <div class="botoes">
-            <v-btn
-                class="mx-2"
-                color="purple"
-                elevation="2"
-                medium
-                outlined
-                rounded
-                @click="cadastrar"
-            >
-                Cadastrar
-            </v-btn>
+
+            <router-link to="/loja">
+                <v-btn
+                    class="mx-2"
+                    color="purple"
+                    elevation="2"
+                    medium
+                    outlined
+                    rounded
+                    @click="cadastrar"
+                >
+                    Cadastrar
+                </v-btn>
+            </router-link>
 
             <v-btn
                 class="mx-2"
@@ -51,9 +58,8 @@ export default {
     name: "CadastroClienteView.vue",
     data() {
         return {
-            nomeVendedor: "",
-            nomeLoja: "",
-            cnpj: "",
+            nome: "",
+            cpf: "",
             endereco: "",
             telefone: "",
             email: "",
@@ -64,9 +70,8 @@ export default {
     methods: {
         cadastrar() {},
         limpar() {
-            this.nomeVendedor = "";
-            this.nomeLoja = "";
-            this.cnpj = "";
+            this.nome = "";
+            this.cpf = "";
             this.endereco = "";
             this.telefone = "";
             this.email = "";
