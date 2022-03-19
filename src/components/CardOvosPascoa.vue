@@ -9,7 +9,7 @@
     </v-img>
 
     <v-card-subtitle class="subtitle-1 pb-0">
-        <div> R${{preco}} • {{nomeLocal}} </div>
+        <div> {{arrumaPreco(preco)}} • {{nomeLocal}} </div>
     </v-card-subtitle>
 
     <v-card-subtitle class="subtitle-2 pt-1 pb-3">
@@ -45,13 +45,19 @@ export default {
         preco: undefined
     },
     methods: {
-        
+        arrumaPreco(preco){
+          var formatter = new Intl.NumberFormat('pt-BR', {
+                          style: 'currency',
+                          currency: 'BRL',
+                        });
+          return formatter.format(preco);
+        }
     },
 };
 </script>
 
 <style scoped>
   .titulo{
-    background-color: rgba(0, 0, 0, 0.0004),
+    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
