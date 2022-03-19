@@ -27,17 +27,11 @@
           >Login</v-btn
         >
         
-        <v-btn  
-          @click="delay"  
-          color="purple darken-4" 
-          elevation="2" 
-          medium 
-          outlined 
-          rounded
-          > Cadastrar</v-btn
-        >
+          <v-btn  @click="delay"  color="purple darken-4" elevation="2" medium outlined rounded
+            > Cadastrar</v-btn
+          >
+        
       </div>
-
     </div>
   </v-app>
 </template>
@@ -73,10 +67,8 @@ export default {
 .login-box {
   max-width: 100%;
 }
-.botoes{
-  display: flex,
-}
 .botoes a {
   text-decoration: none;
+  display: flex;
 }
 </style>
