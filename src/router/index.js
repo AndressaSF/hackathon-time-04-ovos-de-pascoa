@@ -5,6 +5,7 @@ import AboutView from '../views/AboutView.vue'
 import PaginaLogin from"../views/PaginaLogin.vue"
 import LojaView from '../views/LojaView.vue'
 import CadastroVendedorView from '../views/CadastroVendedorView.vue'
+import infoDevs from '../views/infoDevs.vue'
 
 Vue.use(VueRouter)
 
@@ -33,7 +34,13 @@ const routes = [
     path: '/loja',
     name: 'loja',
     component: LojaView
+  },
+  {
+    path: '/informacoes-sobre-desenvolvedores',
+    name: 'infoDevs',
+    component: infoDevs
   }
+
 ]
 
 const router = new VueRouter({
