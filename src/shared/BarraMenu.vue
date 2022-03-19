@@ -30,7 +30,7 @@
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="deep-purple--text text--accent-4"
+          active-class="light-purple--text text--accent-4"
         >
           <router-link to="/">
             <v-list-item>
@@ -55,16 +55,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-account</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Cadastro Clientes</v-list-item-title>
-            </v-list-item>
-          </router-link>
-
-          <router-link to="/cadastro-vendedores">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Cadastro Vendedores</v-list-item-title>
+              <v-list-item-title>Cadastro</v-list-item-title>
             </v-list-item>
           </router-link>
 

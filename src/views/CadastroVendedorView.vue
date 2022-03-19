@@ -1,36 +1,42 @@
 <template>
 <div style="width: 80%" class="registro">
     <h2>Cadastro de Vendedor</h2>
+    <router-link to="cadastro-clientes">
+        <v-btn color="purple" text>
+            É cliente?
+        </v-btn>
+    </router-link>
     <v-form class="registro-box" ref="form" v-model="valid" lazy-validation>
-        <v-text-field v-model="nome" label="Nome Completo" required>
+        <v-text-field v-model="nomeVendedor" label="Nome Completo" required>
         </v-text-field>
         <v-text-field v-model="telefone" label="Telefone" required >
         </v-text-field>
         <v-text-field v-model="email" label="E-mail" required>
         </v-text-field>
-        <v-text-field v-model="nome" label="Nome da Loja" required>
+        <v-text-field v-model="nomeLoja" label="Nome da Loja" required>
         </v-text-field>
         <v-text-field v-model="endereco" label="Endereço da Loja" required>
         </v-text-field>
-        <v-text-field v-model="email" label="CNPJ da Loja" required>
+        <v-text-field v-model="cnpj" label="CNPJ da Loja" required>
         </v-text-field>
-
-        <v-text-field v-model="password" type="password" label="Senha" required>
+        <v-text-field v-model="senha" type="password" label="Senha" required>
         </v-text-field>
 
     </v-form>
         <div class="botoes">
-            <v-btn
-                class="mx-2"
-                color="purple"
-                elevation="2"
-                medium
-                outlined
-                rounded
-                @click="cadastrar"
-            >
-                Cadastrar
-            </v-btn>
+            <router-link to="/loja">
+                <v-btn
+                    class="mx-2"
+                    color="purple"
+                    elevation="2"
+                    medium
+                    outlined
+                    rounded
+                    @click="cadastrar"
+                >
+                    Cadastrar
+                </v-btn>
+            </router-link>
 
             <v-btn
                 class="mx-2"
