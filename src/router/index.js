@@ -6,6 +6,8 @@ import PaginaLogin from"../views/PaginaLogin.vue"
 import LojaView from '../views/LojaView.vue'
 import CadastroVendedorView from '../views/CadastroVendedorView.vue'
 import infoDevs from '../views/infoDevs.vue'
+import CadastroClienteView from '../views/CadastroClienteView.vue'
+
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,11 @@ const routes = [
     path: '/informacoes-sobre-desenvolvedores',
     name: 'infoDevs',
     component: infoDevs
+  },
+  {
+    path: '/cadastro-clientes',
+    name: 'cadastroClientes',
+    component: CadastroClienteView
   }
 
 ]

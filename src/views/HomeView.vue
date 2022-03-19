@@ -15,12 +15,15 @@
     </v-card-title>
 
     <v-card-actions>
-      <v-btn
-        color="orange lighten-2"
-        text
-      >
-        Compre Aqui
-      </v-btn>
+      <router-link to="/loja">
+        <v-btn
+          color="orange lighten-2"
+          text
+        >
+          Compre Aqui
+        </v-btn>
+      </router-link>
+      
 
       <v-spacer></v-spacer>
 
@@ -37,23 +40,31 @@
     ></v-img>
 
     <v-card-title>
-      Anuncie em nossa loja
+      CADASTRE-SE 
     </v-card-title>
 
     <v-card-subtitle>
-      milhares de benefícios
+      E RECEBA DIVERSOS BENEFÍCIOS
     </v-card-subtitle>
 
     <v-card-actions>
-      <v-btn
-        color="orange lighten-2"
-        text
-      >
-        Cadastrar-se
-      </v-btn>
-
+      <router-link to="/cadastro-clientes">
+        <v-btn
+          color="orange lighten-2"
+          text
+        >
+          Cliente
+        </v-btn>
+      </router-link>
       <v-spacer></v-spacer>
-
+<router-link to="/cadastro-vendedores">
+        <v-btn
+          color="orange lighten-2"
+          text
+        >
+          Vendedor
+        </v-btn>
+      </router-link>
     </v-card-actions>
   </v-card>
   </v-container>
@@ -78,5 +89,9 @@ export default {
 <style>
 .first {
   margin-bottom: 30px;
+}
+
+* {
+  text-decoration: none;
 }
 </style>

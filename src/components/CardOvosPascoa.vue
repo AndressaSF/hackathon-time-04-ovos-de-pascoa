@@ -21,7 +21,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="orange" text >
+      <v-btn color="purple" text >
         Comprar
       </v-btn>
     </v-card-actions>

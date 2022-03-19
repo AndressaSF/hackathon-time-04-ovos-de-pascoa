@@ -78,6 +78,11 @@ export default {
     drawer: false,
     group: null,
   }),
+  methods: {
+    darkMode() {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      }
+  }
 };
 </script>
 
