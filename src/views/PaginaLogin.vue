@@ -6,7 +6,7 @@
       </div>
 
       <v-form class="PaginaLogin-box">
-        <v-text-field  label="Usuário" required> </v-text-field>
+        <v-text-field  label="E-mail" required> </v-text-field>
 
         <v-text-field
           type="Senha"
@@ -59,7 +59,6 @@ export default {
         setTimeout(()=>{
           this.$router.push('/cadastro-clientes')
           },100)
-
     }
   }
 }
