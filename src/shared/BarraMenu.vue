@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Páscoathon</v-toolbar-title>
+      <v-toolbar-title><h3>Páscoathon<v-icon>egg-easter</v-icon></h3></v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
