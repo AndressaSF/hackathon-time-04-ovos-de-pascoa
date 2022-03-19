@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title><h3>Páscoathon<v-icon>egg-easter</v-icon></h3></v-toolbar-title>
+      <v-toolbar-title><h3>Páscoathon <v-icon>mdi-egg-easter</v-icon> </h3>  </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -53,7 +53,7 @@
           <router-link to="/cadastro-clientes">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
+                <v-icon>mdi-account-plus</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Cadastro</v-list-item-title>
             </v-list-item>

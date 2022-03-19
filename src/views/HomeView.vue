@@ -1,6 +1,17 @@
 <template>
   <v-container> 
+    <router-link to="/login">
+    <v-card
+    class="mx-auto"
+    max-width="344"
+    >
+    <v-img
+      src="../assets/btn2.jpg"
+      height="40px"
+    ></v-img>
 
+  </v-card>
+    </router-link>
     <v-card
     class="mx-auto first"
     max-width="344"
@@ -89,6 +100,7 @@ export default {
 <style>
 .first {
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 * {
