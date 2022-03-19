@@ -4,6 +4,26 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <v-toolbar-title><h3>Páscoathon<v-icon>egg-easter</v-icon></h3></v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-tooltip v-if="!$vuetify.theme.dark" top>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
+            <v-icon class="mr-1">mdi-moon-waxing-crescent</v-icon>
+          </v-btn>
+        </template>
+        <span>Modo escuro desligado</span>
+      </v-tooltip>
+
+      <v-tooltip v-else top>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
+            <v-icon>mdi-white-balance-sunny</v-icon>
+          </v-btn>
+        </template>
+        <span>Modo escuro ligado</span>
+      </v-tooltip>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
