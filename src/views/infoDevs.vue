@@ -80,4 +80,9 @@ export default {
     .inicio-imagem {
         border-radius: 5px;
     }
+
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+    }
 </style>
