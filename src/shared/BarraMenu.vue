@@ -53,7 +53,7 @@
           <router-link to="/cadastro-clientes">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
+                <v-icon>mdi-account-plus</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Cadastro</v-list-item-title>
             </v-list-item>
